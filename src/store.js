@@ -1,13 +1,12 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import { createStore } from 'vuex';
 
-Vue.use(Vuex);
-
-export default new Vuex.Store({
-  state: {
-    todos: [
+const store = createStore({
+  state() {
+    return {
+      todos: [
         "demo todo"
-    ],
+      ],
+    }
   },
   mutations: {
     addTodo: (state, newTodo) => {
@@ -26,3 +25,5 @@ export default new Vuex.Store({
     },
   }
 });
+
+export default store;

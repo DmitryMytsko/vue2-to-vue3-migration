@@ -8,10 +8,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import TodoList from "./components/TodoList.vue";
 import AddTodo from "./components/AddTodo.vue";
-export default {
-  components: {TodoList, AddTodo},
-};
 </script>
